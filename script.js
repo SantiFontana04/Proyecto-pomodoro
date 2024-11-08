@@ -64,6 +64,12 @@ function cambiarContexto(contexto){
     }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    tiempoTranscurridoEnSegundos = 1500;
+    cambiarContexto("enfoque");
+    botonEnfoque.classList.add("active");
+});
+
 botonCorto.addEventListener("click", () => {
     tiempoTranscurridoEnSegundos = 300;
     cambiarContexto("descanso-corto");
